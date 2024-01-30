@@ -17,12 +17,13 @@ The model’s hierarchical structure is designed for flexibility, allowing descr
 The schema is meticulously designed to enable a detailed and systematic description of manuscripts, encompassing everything from individual codicological units to the overall binding, ensuring comprehensive documentation of their physical attributes. 
 
 ## References
-Derolez, Albert. 1984. *Codicologie des manuscrits en écriture humanistique sur parchemin*. 2 vols. Bibliologia. Elementa ad librorum studia pertinentia. Turnhout: Brepols.
-Gumbert, Johann Peter. 2004. ‘Codicological Units: Towards a Terminology for the Stratigraphy of the Non-Homogeneous Codex’. In *Il Codice Miscellaneo. Tipologie e Funzioni: : Atti Del Convegno Internazionale Cassino 14–17 Maggio 2003*, edited by Edoardo Crisci and Oronzo Pecere, 17–42. Segno e Testo 2. Cassino: Università degli Studi di Cassino.
-Ligatus. 2007. *Survey Schemas*. London: University of the Arts London. http://www.ligatus.org.uk/stcatherines/node/1052.
-———. 2015a. ‘Bolts’. In *Language of Bindings Thesaurus*. London: Ligatus. http://w3id.org/lob/concept/4081.
-———. 2015b. ‘Deckle Edges’. In *Language of Bindings Thesaurus*. London: Ligatus. http://w3id.org/lob/concept/1284.
-Needham, Paul. 2017. ‘Format and Paper Size in Fifteenth-Century Printing’. In *Materielle Aspekte in Der Inkunabelforschung*, edited by Christoph Reske and Wolfgang Schmitz, 59–108. Wolfenbüttel Writings on the History of Bookkeeping 49. Wiesbaden: Harrassowitz Verlag in Kommission.
-Porter, Dot, and Alberto Campagnolo. 2021. *VisColl: Modeling and Visualizing the Physical Construction of Codex Manuscripts*. Philadelphia (PA): University of Pennsylvania Libraries. https://viscoll.org/.
+Derolez, Albert. 1984. *Codicologie des manuscrits en écriture humanistique sur parchemin*. 2 vols. Bibliologia. Elementa ad librorum studia pertinentia. Turnhout: Brepols.  
+Gumbert, Johann Peter. 2004. ‘Codicological Units: Towards a Terminology for the Stratigraphy of the Non-Homogeneous Codex’. In *Il Codice Miscellaneo. Tipologie e Funzioni: : Atti Del Convegno Internazionale Cassino 14–17 Maggio 2003*, edited by Edoardo Crisci and Oronzo Pecere, 17–42. Segno e Testo 2. Cassino: Università degli Studi di Cassino.  
+Ligatus. 2007. *Survey Schemas*. London: University of the Arts London. http://www.ligatus.org.uk/stcatherines/node/1052.  
+———. 2015a. ‘Bolts’. In *Language of Bindings Thesaurus*. London: Ligatus. http://w3id.org/lob/concept/4081.  
+———. 2015b. ‘Deckle Edges’. In *Language of Bindings Thesaurus*. London: Ligatus. http://w3id.org/lob/concept/1284.  
+Needham, Paul. 2017. ‘Format and Paper Size in Fifteenth-Century Printing’. In *Materielle Aspekte in Der Inkunabelforschung*, edited by Christoph Reske and Wolfgang Schmitz, 59–108. Wolfenbüttel Writings on the History of Bookkeeping 49. Wiesbaden: Harrassowitz Verlag in Kommission.  
+Porter, Dot, and Alberto Campagnolo. 2021. *VisColl: Modeling and Visualizing the Physical Construction of Codex Manuscripts*. Philadelphia (PA): University of Pennsylvania Libraries. https://viscoll.org/.  
+
 
 
