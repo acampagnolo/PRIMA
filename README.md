@@ -17,7 +17,7 @@ The model’s hierarchical structure is designed for flexibility, allowing descr
 The schema is meticulously designed to enable a detailed and systematic description of manuscripts, encompassing everything from individual codicological units to the overall binding, ensuring comprehensive documentation of their physical attributes. 
 
 ## References
-Derolez, Albert. 1984. *Codicologie des manuscrits en écriture humanistique sur parchemin*. 2 vols. Bibliologia. Elementa ad librorum studia pertinentia. Turnhout: Brepols. 
+Derolez, Albert. 1984. *Codicologie des manuscrits en écriture humanistique sur parchemin*. 2 vols. Bibliologia. Elementa ad librorum studia pertinentia. Turnhout: Brepols.  
 <br>
 Gumbert, Johann Peter. 2004. ‘Codicological Units: Towards a Terminology for the Stratigraphy of the Non-Homogeneous Codex’. In *Il Codice Miscellaneo. Tipologie e Funzioni: : Atti Del Convegno Internazionale Cassino 14–17 Maggio 2003*, edited by Edoardo Crisci and Oronzo Pecere, 17–42. Segno e Testo 2. Cassino: Università degli Studi di Cassino.  
 <br>
