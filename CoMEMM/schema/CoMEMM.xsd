@@ -583,9 +583,44 @@
   <xs:complexType name="type.laidLines">
     <xs:sequence>
       <xs:element name="numberIn20mm" type="type.measurementValue"/>
+      <xs:element name="type" type="type.laidLineType"/>
       <xs:element name="direction" type="type.paperFeatureDirection"/>
       <xs:element name="note" type="xs:string" minOccurs="0"/>
     </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="type.laidLineType">
+    <xs:annotation>
+      <xs:documentation>Describe the type of laidlines. These can be </xs:documentation>
+    </xs:annotation>
+    <xs:choice>
+      <xs:element name="NC" type="type.empty"/>
+      <xs:element name="regular" type="type.empty">
+        <xs:annotation>
+          <xs:documentation>The typical laidline pattern with all marks regularly spaced and equally
+            distributed.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="alternate" type="type.empty">
+        <xs:annotation>
+          <xs:documentation>Alternate or double laidlines. This pattern identify papers with an
+            alternance of thick and thin laidlines (Muzerelle 2002, N.134.05; Maniaci 1996,
+            54-55).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="grooved" type="type.empty">
+        <xs:annotation>
+          <xs:documentation>A grooved laid line pattern in which, at regular intervals, there is a
+            more prominent laid line among the other finer lines. This pattern is characterized by
+            the presence of distinct, continuous channels or grooves formed by the thicker lines,
+            which are set against a background of more closely spaced, thinner lines. The result is
+            a textured surface with a rhythmic visual and tactile quality, where the alternating
+            thick and thin lines create a sense of depth and dimension. (Muzerelle 2002, N.134.06;
+            Maniaci 1996, 54-55).</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="NK" type="type.empty"/>
+      <xs:element name="other" type="xs:string"/>
+    </xs:choice>
   </xs:complexType>
   <xs:complexType name="type.paperFeatureDirection">
     <xs:annotation>
@@ -1211,7 +1246,21 @@
       </xs:element>
       <xs:element name="layoutFormula" default="| T |" minOccurs="0">
         <xs:annotation>
-          <xs:documentation source="https://manual.mmfc.be/p/MMFC:Elements/Artefact/Layout_section">The schematic representation of the layout. The pipeline sign “|” denotes vertical bounding lines that run the full height of the page while square brackets “[“ “]” are used for vertical lines limited to the text frame. Opening “[“ or closing “]” brackets are interchangeable, but they can be strategically utilized to visually represent the boundaries of the text frame. For instance, a bracket facing outward “[“ might indicate the start of the text frame, while a bracket facing inward “]” can signify the end. The second element of the formula are the letters T, G, and C to represent a text column, a gloss, and the vertically ruled column for initials (in verse texts), respectively. Therefore, a full-page manuscript with a vertical line on each side would be denoted as “| T |”. A manuscript with a two-column layout, each column bounded by one vertical line, is represented as “| T | | T |”. In the case of a two-column manuscript with glosses on either side, the formula is “| G || T | | T || G |”. The notation for a verse text in a one-column layout with bounding lines for initials and a right-side bounding line for the verse limited to the text frame is “[ C [ T ]”.</xs:documentation>
+          <xs:documentation source="https://manual.mmfc.be/p/MMFC:Elements/Artefact/Layout_section"
+            >The schematic representation of the layout. The pipeline sign “|” denotes vertical
+            bounding lines that run the full height of the page while square brackets “[“ “]” are
+            used for vertical lines limited to the text frame. Opening “[“ or closing “]” brackets
+            are interchangeable, but they can be strategically utilized to visually represent the
+            boundaries of the text frame. For instance, a bracket facing outward “[“ might indicate
+            the start of the text frame, while a bracket facing inward “]” can signify the end. The
+            second element of the formula are the letters T, G, and C to represent a text column, a
+            gloss, and the vertically ruled column for initials (in verse texts), respectively.
+            Therefore, a full-page manuscript with a vertical line on each side would be denoted as
+            “| T |”. A manuscript with a two-column layout, each column bounded by one vertical
+            line, is represented as “| T | | T |”. In the case of a two-column manuscript with
+            glosses on either side, the formula is “| G || T | | T || G |”. The notation for a verse
+            text in a one-column layout with bounding lines for initials and a right-side bounding
+            line for the verse limited to the text frame is “[ C [ T ]”.</xs:documentation>
           <xs:documentation>Default value: '| T |'</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
@@ -1908,7 +1957,9 @@
                   <xs:element name="everyLeaf" type="type.empty"/>
                   <xs:element name="firstRectoEachFolio" type="type.empty">
                     <xs:annotation>
-                      <xs:documentation source="http://codicologia.irht.cnrs.fr/theme/liste_theme/315#tr-3855">Signature par feuilles. Système de signature utilisé dans certains cahiers
+                      <xs:documentation
+                        source="http://codicologia.irht.cnrs.fr/theme/liste_theme/315#tr-3855"
+                        >Signature par feuilles. Système de signature utilisé dans certains cahiers
                         composés de plusieurs feuilles pliées séparément, dans lequel le premier
                         recto issu de chaque feuille porte une signature composée d'une lettre
                         désignant le cahier et d'un chiffre désignant la feuille.</xs:documentation>
