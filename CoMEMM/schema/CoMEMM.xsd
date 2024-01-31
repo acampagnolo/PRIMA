@@ -590,7 +590,8 @@
   </xs:complexType>
   <xs:complexType name="type.laidLineType">
     <xs:annotation>
-      <xs:documentation>Describe the type of laidlines. These can be </xs:documentation>
+      <xs:documentation>Describe the type of laidlines. These can be regular, alternate or double,
+        and grooved.</xs:documentation>
     </xs:annotation>
     <xs:choice>
       <xs:element name="NC" type="type.empty"/>
@@ -602,8 +603,8 @@
       </xs:element>
       <xs:element name="alternate" type="type.empty">
         <xs:annotation>
-          <xs:documentation>Alternate or double laidlines. This pattern identify papers with an
-            alternance of thick and thin laidlines (Muzerelle 2002, N.134.05; Maniaci 1996,
+          <xs:documentation>Alternate or double laidlines. This pattern identify papers with
+            alternate thick and thin laidlines (Muzerelle 2002, N.134.05; Maniaci 1996,
             54-55).</xs:documentation>
         </xs:annotation>
       </xs:element>
