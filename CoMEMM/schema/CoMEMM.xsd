@@ -1211,17 +1211,7 @@
       </xs:element>
       <xs:element name="layoutFormula" default="| T |" minOccurs="0">
         <xs:annotation>
-          <xs:documentation source="https://manual.mmfc.be/p/MMFC:Elements/Artefact/Layout_section">The schematic representation of the layout. The formula is constructed using '|' as the
-            representation of a vertical bounding line running the full length of the page and '[' and ']' for vertical lines limited to the text area. These are combined with the letters 'T', 'G' and 'C' to
-            represent respectively a text column, a gloss, and the vertically ruled column reserved
-            for initials (in verse texts). Thus, a full-page manuscript with a vertical line at each
-            side the formula (given here as the default value) should be: '| T |'. If a manuscript
-            contains a two-column layout and each column is bounded by one vertical line on either
-            side, then the formula should be: '| T | | T |'. When the columns of a manuscript are
-            enclosed in glosses and glosses and text columns are bounded by vertical lines, then the
-            formula would be: '| G || T | | T || G |'. Finally, for a verse text in a one-column
-            layout with bounding lines for the initials and a bounding line at to the right of the
-            verse, the formula would be: '|C| T |'.</xs:documentation>
+          <xs:documentation source="https://manual.mmfc.be/p/MMFC:Elements/Artefact/Layout_section">The schematic representation of the layout. The pipeline sign “|” denotes vertical bounding lines that run the full height of the page while square brackets “[“ “]” are used for vertical lines limited to the text frame. Opening “[“ or closing “]” brackets are interchangeable, but they can be strategically utilized to visually represent the boundaries of the text frame. For instance, a bracket facing outward “[“ might indicate the start of the text frame, while a bracket facing inward “]” can signify the end. The second element of the formula are the letters T, G, and C to represent a text column, a gloss, and the vertically ruled column for initials (in verse texts), respectively. Therefore, a full-page manuscript with a vertical line on each side would be denoted as “| T |”. A manuscript with a two-column layout, each column bounded by one vertical line, is represented as “| T | | T |”. In the case of a two-column manuscript with glosses on either side, the formula is “| G || T | | T || G |”. The notation for a verse text in a one-column layout with bounding lines for initials and a right-side bounding line for the verse limited to the text frame is “[ C [ T ]”.</xs:documentation>
           <xs:documentation>Default value: '| T |'</xs:documentation>
         </xs:annotation>
         <xs:simpleType>
