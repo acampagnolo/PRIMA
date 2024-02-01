@@ -1177,17 +1177,33 @@
                     terms.</xs:documentation>
                 </xs:annotation>
                 <xs:sequence>
-                  <xs:element name="genericMethodDescription" type="type.lineProductionMethod">
-                    <xs:annotation>
-                      <xs:documentation>There are many methods for the production of ruling
-                        patterns. It is not always easy to distinguish among them, but they can also
-                        be more generally cathegorized for the trace they leave on the leaves:
-                        relief methods create ridges and furrows, coloured-in methods leave a
-                        coloured trace on the surface of one side of the leaves, untraced methods
-                        utilize an external recourse/tool to guide writing without leaving a trace
-                        on the leaves (e.g. a guide sheet put behind the leaf while
-                        writing).</xs:documentation>
-                    </xs:annotation>
+                  <xs:element name="genericMethodDescription" maxOccurs="unbounded">
+                    
+                    <xs:complexType>
+                      <xs:sequence>
+                        <xs:element name="rulingMethod" type="type.lineProductionMethod">
+                          <xs:annotation>
+                            <xs:documentation>There are many methods for the production of ruling
+                              patterns. It is not always easy to distinguish among them, but they can also
+                              be more generally cathegorized for the trace they leave on the leaves:
+                              relief methods create ridges and furrows, coloured-in methods leave a
+                              coloured trace on the surface of one side of the leaves, untraced methods
+                              utilize an external recourse/tool to guide writing without leaving a trace
+                              on the leaves (e.g. a guide sheet put behind the leaf while
+                              writing).</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>                        
+                      </xs:sequence>
+                      <xs:attribute name="lineDirection" use="required">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:NMTOKEN">
+                            <xs:enumeration value="both-VerticalHorizontal"/>
+                            <xs:enumeration value="vertical"/>
+                            <xs:enumeration value="horizontal"/>
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:attribute>
+                    </xs:complexType>
                   </xs:element>
                 </xs:sequence>
                 <xs:sequence>
@@ -1247,8 +1263,7 @@
       </xs:element>
       <xs:element name="layoutFormula" default="| T |" minOccurs="0">
         <xs:annotation>
-          <xs:documentation source="https://manual.mmfc.be/p/MMFC:Elements/Artefact/Layout_section"
-            >The schematic representation of the layout. The pipeline sign “|” denotes vertical
+          <xs:documentation source="https://manual.mmfc.be/p/MMFC:Elements/Artefact/Layout_section">The schematic representation of the layout. The pipeline sign “|” denotes vertical
             bounding lines that run the full height of the page while square brackets “[“ “]” are
             used for vertical lines limited to the text frame. Opening “[“ or closing “]” brackets
             are interchangeable, but they can be strategically utilized to visually represent the
@@ -1958,9 +1973,7 @@
                   <xs:element name="everyLeaf" type="type.empty"/>
                   <xs:element name="firstRectoEachFolio" type="type.empty">
                     <xs:annotation>
-                      <xs:documentation
-                        source="http://codicologia.irht.cnrs.fr/theme/liste_theme/315#tr-3855"
-                        >Signature par feuilles. Système de signature utilisé dans certains cahiers
+                      <xs:documentation source="http://codicologia.irht.cnrs.fr/theme/liste_theme/315#tr-3855">Signature par feuilles. Système de signature utilisé dans certains cahiers
                         composés de plusieurs feuilles pliées séparément, dans lequel le premier
                         recto issu de chaque feuille porte une signature composée d'une lettre
                         désignant le cahier et d'un chiffre désignant la feuille.</xs:documentation>
